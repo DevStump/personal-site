@@ -107,7 +107,14 @@ export default function Portfolio() {
     "Team Leadership",
   ]
 
-  const favoriteMusic = ["Stadium Anthems", "Electronic", "Hip Hop", "Classic Rock", "Pump-up Playlists"]
+  const favoriteMusic = [
+    "King Gizzard & The Lizard Wizard",
+    "Stadium Anthems",
+    "Psychedelic Rock",
+    "Electronic",
+    "Hip Hop",
+    "Classic Rock",
+  ]
 
   const favoriteMovies = ["Moneyball", "The Last Dance", "Rush", "Ford v Ferrari", "Chef", "Any Given Sunday"]
 
@@ -117,6 +124,14 @@ export default function Portfolio() {
     "Soccer Tactics",
     "Baseball Sabermetrics",
     "Sports Betting",
+  ]
+
+  const personalQuirks = [
+    "Sea Turtle Conservation",
+    "Ocean Photography",
+    "Psychedelic Rock Concerts",
+    "Mediterranean Diving",
+    "Vinyl Record Collecting",
   ]
 
   return (
@@ -162,16 +177,18 @@ export default function Portfolio() {
               <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground rounded-full p-2">
                 <Trophy className="w-6 h-6" />
               </div>
+              
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              <span className="sports-gradient bg-clip-text text-transparent">Nick Piovano</span>
+              
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6">
               Sports Product Manager & Weekend Code Athlete
             </p>
             <p className="text-lg max-w-2xl mx-auto mb-8 text-muted-foreground">
               Building winning products in the sports industry by day, crafting code by night. Former pizza entrepreneur
-              who traded dough for data, but kept the passion for bringing people together.
+              who traded dough for data, but kept the passion for bringing people together. Currently swimming through
+              product challenges like a sea turtle navigating ocean currents.
             </p>
             <div className="flex justify-center space-x-4">
               <Button className="bg-primary hover:bg-primary/90" asChild>
@@ -223,7 +240,7 @@ export default function Portfolio() {
                 </p>
                 <div className="flex items-center text-muted-foreground mb-2">
                   <MapPin className="w-4 h-4 mr-2 text-accent" />
-                  San Francisco, CA
+                  Boston, MA
                 </div>
                 <div className="flex items-center text-muted-foreground">
                   <Calendar className="w-4 h-4 mr-2 text-accent" />
@@ -371,12 +388,13 @@ export default function Portfolio() {
             </h2>
             <p className="text-muted-foreground">What keeps me motivated outside of work</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="bg-card border-border">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-8xl mx-auto">
+            <Card className="bg-card border-border king-gizz-glow">
               <CardHeader>
                 <CardTitle className="flex items-center text-card-foreground">
                   <Music className="w-5 h-5 mr-2 text-accent" />
                   Game Day Playlist
+                  <span className="ml-2 gator-bounce">🐊</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -388,7 +406,8 @@ export default function Portfolio() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mt-4">
-                  Music that gets me pumped up for big product launches and late-night coding sessions.
+                  From King Gizzard's microtonal madness to stadium anthems that pump me up for big product launches and
+                  late-night coding sessions.
                 </p>
               </CardContent>
             </Card>
@@ -429,6 +448,27 @@ export default function Portfolio() {
                 </div>
                 <p className="text-muted-foreground mt-4">
                   Always diving deep into the numbers behind the games. Data tells the real story.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="bg-card border-border">
+              <CardHeader>
+                <CardTitle className="flex items-center text-card-foreground">
+                  <span className="text-2xl mr-2 turtle-float">🐢</span>
+                  Personal Vibes
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {personalQuirks.map((quirk) => (
+                    <Badge key={quirk} variant="secondary" className="bg-secondary/20 text-secondary">
+                      {quirk}
+                    </Badge>
+                  ))}
+                </div>
+                <p className="text-muted-foreground mt-4">
+                  Sea turtles are my spirit animal - patient, persistent, and always finding their way home. Plus King
+                  Gizz concerts are basically my church.
                 </p>
               </CardContent>
             </Card>
@@ -480,7 +520,8 @@ export default function Portfolio() {
         <div className="container mx-auto text-center text-muted-foreground">
           <p>
             &copy; 2024 Nick Piovano. Built with Next.js, Tailwind CSS, and a lot of{" "}
-            <span className="text-primary">❤️</span> for sports and great pizza.
+            <span className="text-primary">❤️</span> for sports, great pizza, and sea turtles{" "}
+            <span className="sea-turtle inline-block">🐢</span>
           </p>
         </div>
       </footer>

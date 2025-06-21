@@ -43,3 +43,60 @@
 .pizza-glow {
   box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
 }
+
+.sea-turtle {
+  animation: swim 8s ease-in-out infinite;
+}
+
+@keyframes swim {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(10px) rotate(2deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateX(-10px) rotate(-2deg);
+  }
+}
+
+.gator-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.turtle-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+
+.king-gizz-glow {
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+  transition: box-shadow 0.3s ease;
+}
+
+.king-gizz-glow:hover {
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.6);
+}
