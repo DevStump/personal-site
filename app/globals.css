@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 13% 9%;
+    --foreground: 220 9% 95%;
+    --card: 220 13% 7%;
+    --card-foreground: 220 9% 95%;
+    --popover: 220 13% 7%;
+    --popover-foreground: 220 9% 95%;
+    --primary: 0 84% 49%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 142 76% 36%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 60%;
+    --accent: 43 96% 56%;
+    --accent-foreground: 220 13% 9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 220 9% 95%;
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 0 84% 49%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.sports-gradient {
+  background: linear-gradient(135deg, #dc2626 0%, #16a34a 50%, #f59e0b 100%);
+}
+
+.pizza-glow {
+  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+}
