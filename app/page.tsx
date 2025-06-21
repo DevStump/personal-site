@@ -45,10 +45,10 @@ export default function Portfolio() {
       name: "SleeperSheet",
       description:
         "The predescessor to the DynastyGM and Dynasty Nerds App -- what got me started in the fantasy space.",
-      language: "Google Scripts",
+      language: "JavaScript",
       stars: 0,
       forks: 0,
-      topics: ["google sheet", "acquistion", "sports"],
+      topics: ["google scripts", "google sheet", "acquistion", "sports"],
       url: "https://github.com/DevStump/sleepersheet",
     },
     {
