@@ -5,9 +5,9 @@ A modern, responsive portfolio website showcasing my projects, skills, and profe
 [![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/nickpiovanos-projects/v0-personal-portfolio-website)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/oKFhYRa9I8G)
 
-## 🚀 Live Demo
+## 🚀 Live Site
 
-[View Live Site](https://vercel.com/nickpiovanos-projects/v0-personal-portfolio-website)
+[View Live Site](https://nickpiovano.com)
 
 ## 📋 About
 
@@ -36,22 +36,6 @@ This portfolio website serves as a digital showcase of my work and professional 
 - Framer Motion (animations)
 - v0.dev (AI-powered development)
 
-## 🏃‍♂️ Running Locally
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/personal-site.git
-
-# Navigate to the project
-cd personal-site
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
-
 ## 🔧 Development
 
 This project is integrated with [v0.dev](https://v0.dev) for AI-powered development:
@@ -59,18 +43,6 @@ This project is integrated with [v0.dev](https://v0.dev) for AI-powered developm
 - Continue building: [https://v0.dev/chat/projects/oKFhYRa9I8G](https://v0.dev/chat/projects/oKFhYRa9I8G)
 - Changes made in v0.dev are automatically synced to this repository
 - Vercel automatically deploys the latest version
-
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 📧 Contact
-
-Feel free to reach out if you have any questions or would like to connect!
-
-- Email: [your.email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [@yourusername]
 
 ---
 
