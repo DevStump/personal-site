@@ -6,8 +6,6 @@ import {
   Linkedin,
   Mail,
   ExternalLink,
-  Star,
-  GitFork,
   Calendar,
   MapPin,
   Music,
@@ -52,16 +50,6 @@ export default function Portfolio() {
       url: "https://github.com/DevStump/sleepersheet",
     },
     {
-      name: "Personal Website",
-      description:
-        "The very website you're on right now. Site-ception.",
-      language: "TypeScript",
-      stars: 0,
-      forks: 0,
-      topics: ["css", "javascript", "portfolio"],
-      url: "https://github.com/DevStump/personal-site",
-    },
-    {
       name: "GamedayDiary",
       description:
         "Letting fans track and save their favorite memories from the games they attend and watch.",
@@ -80,6 +68,16 @@ export default function Portfolio() {
       forks: 0,
       topics: ["css", "javascript", "finance"],
       url: "https://github.com/DevStump/retiro",
+    },
+    {
+      name: "Personal Website",
+      description:
+        "The very website you're on right now. Site-ception.",
+      language: "TypeScript",
+      stars: 0,
+      forks: 0,
+      topics: ["css", "javascript", "portfolio"],
+      url: "https://github.com/DevStump/personal-site",
     },
   ]
 
@@ -275,13 +273,13 @@ export default function Portfolio() {
           <div className="mb-8">
             <div className="relative inline-block">
               <Image
-                src="/images/profile.png"
+                src="/images/profile.png?v=2"
                 alt="Nick Piovano - Product Manager"
                 width={150}
                 height={150}
                 className="rounded-full mx-auto mb-6 border-4 border-primary pizza-glow object-cover"
               />
-              <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground rounded-full p-2">
+              <div className="absolute -bottom-2 -right-4 bg-accent text-accent-foreground rounded-full p-2">
                 <Trophy className="w-6 h-6" />
               </div>
               
@@ -526,27 +524,15 @@ export default function Portfolio() {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2 mb-4">
+                    <Badge variant="outline" className="text-xs border-secondary/30 text-secondary">
+                      <div className="w-3 h-3 bg-secondary rounded-full mr-2" />
+                      {project.language}
+                    </Badge>
                     {project.topics.map((topic) => (
                       <Badge key={topic} variant="outline" className="text-xs border-accent/30 text-accent">
                         {topic}
                       </Badge>
                     ))}
-                  </div>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <div className="flex items-center space-x-4">
-                      <span className="flex items-center">
-                        <div className="w-3 h-3 bg-secondary rounded-full mr-2" />
-                        {project.language}
-                      </span>
-                      <span className="flex items-center">
-                        <Star className="w-4 h-4 mr-1 text-accent" />
-                        {project.stars}
-                      </span>
-                      <span className="flex items-center">
-                        <GitFork className="w-4 h-4 mr-1 text-accent" />
-                        {project.forks}
-                      </span>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -556,7 +542,7 @@ export default function Portfolio() {
             <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white" asChild>
               <Link href="https://github.com/DevStump" target="_blank">
                 <Github className="w-4 h-4 mr-2" />
-                View Full Roster on GitHub
+                View Full Lineup on GitHub
               </Link>
             </Button>
           </div>
