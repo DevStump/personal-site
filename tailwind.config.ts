@@ -19,6 +19,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        'inter': ['var(--font-inter)', 'sans-serif'],
+        'bricolage': ['var(--font-bricolage)', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -26,11 +30,11 @@ const config: Config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#DC2626", // Tomato red
+          DEFAULT: "#20B2AA", // Caribbean aqua
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#16A34A", // Basil green
+          DEFAULT: "#2E8B57", // Sea green
           foreground: "#FFFFFF",
         },
         destructive: {
@@ -38,20 +42,20 @@ const config: Config = {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "#1F2937", // Dark gray
-          foreground: "#9CA3AF",
+          DEFAULT: "#1A2332", // Deep ocean blue
+          foreground: "#A8B4C0",
         },
         accent: {
-          DEFAULT: "#F59E0B", // Golden crust
-          foreground: "#1F2937",
+          DEFAULT: "#FF7F50", // Coral
+          foreground: "#1A2332",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "#111827", // Very dark gray
-          foreground: "#F9FAFB",
+          DEFAULT: "#1A2332", // Lighter ocean blue
+          foreground: "#F0F8FF",
         },
       },
       borderRadius: {

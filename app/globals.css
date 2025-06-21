@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 220 13% 9%;
-    --foreground: 220 9% 95%;
-    --card: 220 13% 7%;
-    --card-foreground: 220 9% 95%;
-    --popover: 220 13% 7%;
-    --popover-foreground: 220 9% 95%;
-    --primary: 0 84% 49%;
+    --background: 210 20% 12%;
+    --foreground: 180 15% 95%;
+    --card: 210 20% 10%;
+    --card-foreground: 180 15% 95%;
+    --popover: 210 25% 6%;
+    --popover-foreground: 180 15% 95%;
+    --primary: 177 70% 41%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 142 76% 36%;
+    --secondary: 147 50% 35%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 220 13% 15%;
-    --muted-foreground: 220 9% 60%;
-    --accent: 43 96% 56%;
-    --accent-foreground: 220 13% 9%;
+    --muted: 210 20% 12%;
+    --muted-foreground: 180 10% 65%;
+    --accent: 16 100% 66%;
+    --accent-foreground: 210 25% 8%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 220 9% 95%;
-    --border: 220 13% 20%;
-    --input: 220 13% 20%;
-    --ring: 0 84% 49%;
+    --destructive-foreground: 180 15% 95%;
+    --border: 210 20% 18%;
+    --input: 210 20% 18%;
+    --ring: 177 70% 41%;
     --radius: 0.5rem;
   }
 }
@@ -41,7 +41,7 @@
 }
 
 .pizza-glow {
-  box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+  box-shadow: 0 0 20px rgba(32, 178, 170, 0.3);
 }
 
 .sea-turtle {
@@ -93,10 +93,23 @@
 }
 
 .king-gizz-glow {
-  box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+  box-shadow: 0 0 15px rgba(46, 139, 87, 0.4);
   transition: box-shadow 0.3s ease;
 }
 
 .king-gizz-glow:hover {
-  box-shadow: 0 0 25px rgba(34, 197, 94, 0.6);
+  box-shadow: 0 0 25px rgba(46, 139, 87, 0.6);
+}
+
+.caribbean-gradient {
+  background: linear-gradient(135deg, #20B2AA 0%, #FF7F50 50%, #2E8B57 100%);
+}
+
+.ocean-glow {
+  box-shadow: 0 0 20px rgba(255, 127, 80, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.ocean-glow:hover {
+  box-shadow: 0 0 30px rgba(255, 127, 80, 0.5);
 }

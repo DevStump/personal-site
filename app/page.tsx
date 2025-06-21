@@ -242,16 +242,16 @@ export default function Portfolio() {
       <nav className="fixed top-0 w-full bg-background/90 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-bold text-primary">Nick Piovano</h1>
+            <h1 className="text-xl font-bold text-primary font-bricolage">Nick Piovano</h1>
             <div className="hidden md:flex space-x-6">
               <Link href="#about" className="text-muted-foreground hover:text-primary transition-colors">
                 About
               </Link>
               <Link href="#products" className="text-muted-foreground hover:text-primary transition-colors">
-                Products
+                Product
               </Link>
               <Link href="#projects" className="text-muted-foreground hover:text-primary transition-colors">
-                Projects
+                Code
               </Link>
               <Link href="#experience" className="text-muted-foreground hover:text-primary transition-colors">
                 Experience
@@ -279,12 +279,12 @@ export default function Portfolio() {
                 height={150}
                 className="rounded-full mx-auto mb-6 border-4 border-primary pizza-glow object-cover"
               />
-              <div className="absolute -bottom-2 -right-4 bg-accent text-accent-foreground rounded-full p-2">
-                <Trophy className="w-6 h-6" />
+              <div className="absolute top-0 right-0 bg-accent text-accent-foreground rounded-full p-2 border-2 border-background z-10">
+                <Trophy className="w-5 h-5" />
               </div>
               
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 font-bricolage">
               
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-6">
@@ -317,10 +317,10 @@ export default function Portfolio() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4 bg-muted/30">
+      <section id="about" className="py-16 px-4 bg-gradient-to-br from-muted/40 to-primary/10">
         <div className="container mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4 flex items-center justify-center">
+            <h2 className="text-3xl font-bold mb-4 flex items-center justify-center font-bricolage">
               <User className="w-8 h-8 mr-3 text-primary" />
               About the Player
             </h2>
@@ -363,7 +363,7 @@ export default function Portfolio() {
                     <Badge
                       key={skill}
                       variant="secondary"
-                      className="bg-secondary/20 text-secondary border-secondary/30"
+                      className="bg-secondary/20 text-secondary border-secondary/30 hover:bg-secondary/20"
                     >
                       {skill}
                     </Badge>
@@ -393,7 +393,7 @@ export default function Portfolio() {
             {productExperience.map((product) => (
               <Card
                 key={product.name}
-                className="bg-card border-border hover:border-primary/50 transition-all duration-300 pizza-glow"
+                className="bg-card border-border hover:border-primary/50 transition-all duration-300 ocean-glow"
               >
                 <CardHeader>
                   <div className="flex items-start justify-between">
@@ -550,7 +550,7 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="py-16 px-4 bg-muted/30">
+      <section id="experience" className="py-16 px-4 bg-gradient-to-br from-muted/20 to-secondary/5">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 flex items-center justify-center">
@@ -566,10 +566,10 @@ export default function Portfolio() {
                     job.duration.includes('Present') ? 'bg-primary' : 'bg-transparent'
                   }`} />
                   <div className="flex-grow">
-                    <Card className="bg-card border-border">
+                    <Card className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
                       <CardHeader>
                         <CardTitle className="text-card-foreground">{job.position}</CardTitle>
-                        <CardDescription className="flex items-center justify-between">
+                        <CardDescription className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-0">
                           <span className="text-primary font-medium">{job.company}</span>
                           <span className="text-sm text-accent">{job.duration}</span>
                         </CardDescription>
@@ -613,7 +613,7 @@ export default function Portfolio() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {favoriteMusic.map((genre) => (
-                    <Badge key={genre} variant="secondary" className="bg-secondary/20 text-secondary">
+                    <Badge key={genre} variant="secondary" className="bg-secondary/20 text-secondary hover:bg-secondary/20">
                       {genre}
                     </Badge>
                   ))}
@@ -633,7 +633,7 @@ export default function Portfolio() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {favoriteTeams.map((sport) => (
-                    <Badge key={sport} variant="secondary" className="bg-secondary/20 text-secondary">
+                    <Badge key={sport} variant="secondary" className="bg-secondary/20 text-secondary hover:bg-secondary/20">
                       {sport}
                     </Badge>
                   ))}
@@ -653,7 +653,7 @@ export default function Portfolio() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {sportsInterests.map((interest) => (
-                    <Badge key={interest} variant="secondary" className="bg-secondary/20 text-secondary">
+                    <Badge key={interest} variant="secondary" className="bg-secondary/20 text-secondary hover:bg-secondary/20">
                       {interest}
                     </Badge>
                   ))}
@@ -674,7 +674,7 @@ export default function Portfolio() {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {personalQuirks.map((quirk) => (
-                    <Badge key={quirk} variant="secondary" className="bg-secondary/20 text-secondary">
+                    <Badge key={quirk} variant="secondary" className="bg-secondary/20 text-secondary hover:bg-secondary/20">
                       {quirk}
                     </Badge>
                   ))}
@@ -689,13 +689,13 @@ export default function Portfolio() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4 bg-muted/30">
+      <section id="contact" className="py-16 px-4 bg-gradient-to-br from-muted/20 to-accent/5">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-bold mb-4 text-primary">Ready to Team Up?</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Let's connect and see how we can win together!
           </p>
-          <div className="flex justify-center space-x-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-4">
             <Button className="bg-primary hover:bg-primary/90" asChild>
               <Link href="mailto:nicholas.piovano@gmail.com">
                 <Mail className="w-4 h-4 mr-2" />
