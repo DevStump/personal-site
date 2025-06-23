@@ -40,6 +40,16 @@ export default function Portfolio() {
 
   const projects = [
     {
+      name: "PaletteMatch",
+      description:
+        "Discover your seasonal color palette with AI-powered clothing analysis. Take a photo and get instant feedback on what colors work best for you.",
+      language: "TypeScript",
+      stars: 0,
+      forks: 0,
+      topics: ["ai", "color-analysis", "fashion", "computer-vision"],
+      url: "https://www.palettematch.info",
+    },
+    {
       name: "SleeperSheet",
       description:
         "The predescessor to the DynastyGM and Dynasty Nerds App -- what got me started in the fantasy space.",
